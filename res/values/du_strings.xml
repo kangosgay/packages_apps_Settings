@@ -45,5 +45,8 @@
     <string name="keywords_notification_log">notifications, notification log</string>
     <!-- String for removal of sensitive info on about, depending on tap -->
     <string name="device_info_protected_single_press">Tap to show info</string>
+    
+    <!-- Min refresh rate -->
+    <string name="min_refresh_rate_title">Minimum refresh rate</string>
 
 </resources>

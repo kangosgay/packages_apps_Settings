@@ -323,4 +323,11 @@
         <item quantity="other">%d apps locked</item>
     </plurals>
     <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
+
+
+    <!-- Settings dashboard icon style -->
+    <string name="theming_settings_dashboard_anim_title">Settings dashboard icons</string>
+    <string name="theming_settings_dashboard_anim_default2">Default Settings Homepage Background (Clear Settings from recent apps)</string>
+    <string name="theming_settings_dashboard_anim_default_accent2">Nature Greetings Background</string>
+    <string name="theming_settings_dashboard_anim_default_accent3">Liquid Greetings Background</string>
 </resources>

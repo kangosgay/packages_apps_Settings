@@ -45,10 +45,11 @@
     <color name="kangos_version_border_color">#242424</color>
     <color name="kangos_version_text_color">#FFFFFF</color>
 
-    <color name="card_view_bg">#1B1B1B</color>
+    <color name="card_view_bg">#CC1B1B1B</color>
     <color name="black">#FAFAFA</color>
     <color name="off_black">#90FAFAFA</color>
 
     <color name="homepage_generic_icon_background">#14253D</color>
 </resources>
+
 

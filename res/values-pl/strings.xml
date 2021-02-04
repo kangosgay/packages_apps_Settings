@@ -5147,4 +5147,11 @@
     <string name="keywords_media_controls" msgid="8345490568291778638">"multimedia"</string>
     <string name="connected_device_see_all_summary" msgid="2056010318537268108">"Zostanie włączony Bluetooth"</string>
     <string name="aware_summary_when_bedtime_on" msgid="2063856008597376344">"Niedostępne, ponieważ włączony jest tryb snu"</string>
+        
+    <!-- Strings For Settigns-->
+    <string name="greeting_gm">Dzień dobry</string>
+    <string name="greeting_ga">Dzień dobry</string>
+    <string name="greeting_ge">Dobry wieczór</string>
+    <string name="greeting_gn">Dobranoc</string>
+    <string name="greeting_wte">Witaj na ziemi</string>
 </resources>

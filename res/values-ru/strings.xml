@@ -5147,4 +5147,11 @@
     <string name="keywords_media_controls" msgid="8345490568291778638">"Медиа"</string>
     <string name="connected_device_see_all_summary" msgid="2056010318537268108">"Будет включен модуль Bluetooth"</string>
     <string name="aware_summary_when_bedtime_on" msgid="2063856008597376344">"Недоступно в ночном режиме"</string>
+    
+    <!-- Strings For Settigns-->
+    <string name="greeting_gm">Доброе Утро</string>
+    <string name="greeting_ga">Добрый День</string>
+    <string name="greeting_ge">Добрый Вечер</string>
+    <string name="greeting_gn">Доброй Ночи</string>
+    <string name="greeting_wte">Добро Пожаловать На Землю</string>
 </resources>

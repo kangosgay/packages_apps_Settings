@@ -66,6 +66,7 @@ android_library {
         "android.hardware.dumpstate-V1.1-java",
         "VendorSupportLib",
         "airbnb-lottie",
+        "faceunlock_framework",
     ],
 
     libs: [

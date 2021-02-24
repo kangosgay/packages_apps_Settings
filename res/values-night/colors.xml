@@ -20,6 +20,9 @@
     <color name="homepage_card_dismissal_background">@*android:color/material_grey_900</color>
     <color name="contextual_card_background">@*android:color/material_grey_900</color>
     <color name="search_bar_background">@*android:color/material_grey_800</color>
+    <color name="search_bar_stroke_color">#13FFFFFF</color>
+    <color name="contextual_card_stroke_color">#13FFFFFF</color>
+    <color name="settings_header_color">@android:color/white</color>
     <!-- Dialog background color. -->
     <color name="dialog_background">@*android:color/material_grey_800</color>
     <color name="notification_importance_selection_bg">@*android:color/material_grey_800</color>
@@ -46,5 +49,6 @@
     <color name="black">#FAFAFA</color>
     <color name="off_black">#90FAFAFA</color>
 
+    <color name="homepage_generic_icon_background">#14253D</color>
 </resources>
 

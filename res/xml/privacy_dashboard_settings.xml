@@ -25,6 +25,12 @@
         android:key="privacy_animation"
         android:layout="@layout/privacy_animation" />
 
+    <Preference
+        android:layout="@layout/kangos_header"
+        settings:allowDividerBelow="false"
+        android:title="@string/top_privacy_title"
+        android:selectable="false"/>
+
     <!-- Work Policy info -->
     <Preference
         android:key="work_policy_info"

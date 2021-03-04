@@ -27,6 +27,12 @@
         android:layout="@layout/system_animation" />
 
     <Preference
+        android:layout="@layout/kangos_header"
+        android:order="-270"
+        android:title="@string/top_system_title"
+        android:selectable="false"/>
+
+    <Preference
         android:key="language_input_settings"
         android:title="@string/language_settings"
         android:icon="@drawable/ic_settings_language"

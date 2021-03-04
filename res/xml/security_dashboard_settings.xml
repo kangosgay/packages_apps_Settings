@@ -22,9 +22,11 @@
     android:title="@string/security_settings_title">
 
     <Preference
-        android:key="security_animation"
-        android:layout="@layout/security_animation"
-        android:order="-20" />
+        android:layout="@layout/kangos_header"
+        android:order="-20"
+        settings:allowDividerBelow="false"
+        android:title="@string/top_security_title"
+        android:selectable="false"/>
 
     <!-- security_settings_status.xml -->
     <PreferenceCategory

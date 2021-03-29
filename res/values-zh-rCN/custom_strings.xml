@@ -33,10 +33,6 @@
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">已保存耳机</string>
 
-    <!-- Swipe up for face unlock -->
-    <string name="security_settings_face_require_swipe">向上滑动即可解锁</string>
-    <string name="security_settings_face_require_swipe_summary">在锁定屏幕上向上滑动以使用面部解锁</string>
-
     <string name="weather_title">天气</string>
     <string name="traffic_title">网络流量</string>
 

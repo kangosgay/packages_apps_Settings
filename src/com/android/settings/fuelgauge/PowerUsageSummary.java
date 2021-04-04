@@ -252,6 +252,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         }
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
+        
     }
 
     @Override
@@ -373,6 +374,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         } else {
             mNeedUpdateBatteryTip = true;
         }
+        
         // reload BatteryInfo and updateUI
         restartBatteryInfoLoader();
         updateLastFullChargePreference();
@@ -551,7 +553,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
             return null;
         }
     }
-
+    
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider(R.xml.power_usage_summary);
 }

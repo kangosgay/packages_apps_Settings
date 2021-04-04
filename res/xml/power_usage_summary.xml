@@ -66,6 +66,12 @@
         android:title="@string/smart_charging_title"
         android:summary="@string/smart_charging_summary"
         settings:allowDividerAbove="true" />
+    
+    <Preference
+        android:fragment="com.android.settings.fuelgauge.batteryhealth.BatteryHealthSettings"
+        android:key="battery_health_key"
+        android:title="@string/battery_health_title"
+        android:summary="@string/battery_health_summary" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="last_full_charge"
@@ -81,7 +87,7 @@
         android:key="battery_temp"
         android:title="@string/battery_temp_title"
         android:selectable="false" />
-
+    
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:title="@string/battery_footer_summary"

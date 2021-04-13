@@ -357,4 +357,8 @@
     <!-- Battery header -->
     <string name="oneplus_battery_header_title">^1%</string>
     <string name="oneplus_battery_menu_stats_total">View detailed usage</string>
+
+    <!-- Battery saver -->
+    <string name="battery_saver_is_enabled">Battery saver is enabled</string>
+
 </resources>

@@ -292,7 +292,7 @@
     <!-- About phone cards -->
     <string name="storage_card_title">Storage</string>
     <string name="storage_card_info">Occupied</string>
-    <string name="about_device_rom_title">Kang OS</string>
+    <string name="about_device_rom_title">KangOS</string>
 
     <string name="sensor_block_settings_title">Sensor Block</string>
 

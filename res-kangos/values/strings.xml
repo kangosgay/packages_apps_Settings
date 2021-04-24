@@ -46,6 +46,7 @@
     <string name="weather_title">Weather</string>
     <string name="traffic_title">Network traffic</string>
     <string name="fodiconpickerfragment_title">Fod Icon Picker</string>
+    <string name="fodanimpickerfragment_title">Fod Animation Picker</string>
 
     <!-- SELinux Status -->
     <string name="selinux_status">SELinux status</string>

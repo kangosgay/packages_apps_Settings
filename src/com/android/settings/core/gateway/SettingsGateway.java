@@ -169,6 +169,7 @@ import com.awaken.settings.AwakenSettings;
 import com.awaken.settings.OmniJawsSettings;
 import com.awaken.settings.NetworkTrafficSettings;
 import com.awaken.settings.FODIconPickerFragment;
+import com.awaken.settings.FODAnimPickerFragment;
 import com.awaken.settings.fragments.HeadsUpSettings;
 import com.awaken.settings.SmartPixels;
 import com.awaken.settings.GamingMode;
@@ -331,6 +332,7 @@ public class SettingsGateway {
             OmniJawsSettings.class.getName(),
             NetworkTrafficSettings.class.getName(),
             FODIconPickerFragment.class.getName(),
+            FODAnimPickerFragment.class.getName(),
             RunningServices.class.getName(),
             HeadsUpSettings.class.getName(),
             SmartPixels.class.getName(),
@@ -380,6 +382,7 @@ public class SettingsGateway {
             Settings.OmniJawsSettingsActivity.class.getName(),
             Settings.TrafficActivity.class.getName(),
             Settings.FODIconPickerFragmentActivity.class.getName(),
+            Settings.FODAnimPickerFragmentActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
             Settings.HeadsUpSettingsActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),

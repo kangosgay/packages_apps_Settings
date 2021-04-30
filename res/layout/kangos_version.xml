@@ -15,50 +15,31 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="0dp"
-        android:paddingStart="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
         android:background="@drawable/kangos_border">
 
         <LinearLayout
-            android:layout_width="0dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:gravity="center"
+            android:orientation="horizontal" >
 
-            <TextView
-                android:id="@+id/project_kangos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/kangos_version_branding"
-                android:textSize="24sp"
-                android:textColor="@color/kangos_version_text_color" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/kangos_version"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/kangos_version_flavour"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:textColor="?android:attr/colorAccent" />
-            </LinearLayout>
+            <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:clickable="false"
+            app:lottie_rawRes="@raw/kangoslottie"
+            app:lottie_loop="false"
+            app:lottie_autoPlay="true" 
+            app:lottie_colorFilter="?android:attr/colorAccent"
+            app:lottie_enableMergePathsForKitKatAndAbove="true"/>
         </LinearLayout>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:src="@drawable/kangoslogo"
-            tools:ignore="ContentDescription" />
     </LinearLayout>
 
     <LinearLayout

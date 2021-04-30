@@ -78,8 +78,6 @@ public class KangOSVersionPreferenceController extends BasePreferenceController 
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mKangOSVersionLayoutPref = screen.findPreference(getPreferenceKey());
-        mKangOSVersionText = mKangOSVersionLayoutPref.findViewById(R.id.kangos_version);
-        mKangOSVersionFlavourText = mKangOSVersionLayoutPref.findViewById(R.id.kangos_version_flavour);
         mDeviceNameText = mKangOSVersionLayoutPref.findViewById(R.id.device_name_text);
         mCpuText = mKangOSVersionLayoutPref.findViewById(R.id.device_cpu_text);
         mScreenResText = mKangOSVersionLayoutPref.findViewById(R.id.device_screen_res_text);
@@ -92,7 +90,6 @@ public class KangOSVersionPreferenceController extends BasePreferenceController 
 
     private void UpdateKangOSVersionPreference() {
         // We split the different specs into different voids to make the code more organized.
-        updateKangOSVersionText();
         updateDeviceNameText();
         updateCpuText();
         updateScreenResText();
@@ -101,13 +98,6 @@ public class KangOSVersionPreferenceController extends BasePreferenceController 
         updateMaintainerText();
 
     }
-
-    public CharSequence updateKangOSVersionText() {
-        return SystemProperties.get(KEY_KANGOS_VERSION_PROP,
-                mContext.getString(R.string.unknown));
-
-    }
-
     private void updateDeviceNameText() {
         mDeviceNameText.setText(KangOSSpecUtils.getDeviceName());
     }

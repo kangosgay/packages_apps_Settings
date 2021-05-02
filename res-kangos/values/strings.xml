@@ -353,4 +353,8 @@
     <string name="theming_settings_dashboard_anim_default2">Default Settings Homepage Background (Clear Settings from recent apps)</string>
     <string name="theming_settings_dashboard_anim_default_accent2">Nature Greetings Background</string>
     <string name="theming_settings_dashboard_anim_default_accent3">Liquid Greetings Background</string>
+    
+    <!-- Battery header -->
+    <string name="oneplus_battery_header_title">^1%</string>
+    <string name="oneplus_battery_menu_stats_total">View detailed usage</string>
 </resources>

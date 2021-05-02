@@ -101,8 +101,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @VisibleForTesting
     BatteryHeaderPreferenceController mBatteryHeaderPreferenceController;
     @VisibleForTesting
-    BatteryHeaderPreferenceController mBatteryHeaderPreferenceController;
-    @VisibleForTesting
     boolean mNeedUpdateBatteryTip;
     @VisibleForTesting
     BatteryTipPreferenceController mBatteryTipPreferenceController;
@@ -237,20 +235,15 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         }
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
-        
-    }
 
-    @Override
-    public boolean onPreferenceTreeClick(Preference preference) {
-        if (KEY_BATTERY_HEADER.equals(preference.getKey())) {
-            new SubSettingLauncher(getContext())
-                        .setDestination(PowerUsageAdvanced.class.getName())
-                        .setSourceMetricsCategory(getMetricsCategory())
-                        .setTitleRes(R.string.advanced_battery_title)
-                        .launch();
-            return true;
-        }
-        return super.onPreferenceTreeClick(preference);
+        final TextView showStatsBtn = mBatteryLayoutPref.findViewById(R.id.btn_show_stats);
+        showStatsBtn.setOnClickListener(v -> {
+           new SubSettingLauncher(getContext())
+                   .setDestination(PowerUsageAdvanced.class.getName())
+                   .setSourceMetricsCategory(getMetricsCategory())
+                   .setTitleRes(R.string.advanced_battery_title)
+                   .launch();
+        });
     }
 
     @Override

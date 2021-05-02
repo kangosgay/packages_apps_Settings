@@ -66,8 +66,6 @@ public class BatteryMeterView extends CardView {
     private int status;
 	private String extra_status = "";
 
-    private int mLevel;
-
     public BatteryMeterView(Context context) {
         this(context, null, 0);
 		init(context);
@@ -115,6 +113,13 @@ public class BatteryMeterView extends CardView {
                 Utils.getColorAttrDefaultColor(context, android.R.attr.colorForeground));
         mDrawable = new BatteryMeterDrawable(context, frameColor);
         mDrawable.setColorFilter(mAccentColorFilter);
+
+        setImageDrawable(mDrawable);
+    }
+
+    public void setBatteryLevel(int level) {
+        mDrawable.setBatteryLevel(level);
+        updateColorFilter();
     }
 
     public void setPowerSave(boolean powerSave) {
@@ -127,8 +132,9 @@ public class BatteryMeterView extends CardView {
         return extra_status.equals(BatteryManager.EXTRA_BATTERY_LOW);
     }
 
-    public void setText(CharSequence prog) {
-        progress_Text.setText(prog);
+
+    public int getBatteryLevel() {
+        return mDrawable.getBatteryLevel();
     }
     
     public void setBatteryLevel(int progress) {

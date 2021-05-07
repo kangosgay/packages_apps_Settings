@@ -20,13 +20,19 @@
     android:key="network_and_internet_screen"
     android:title="@string/network_dashboard_title">
 
+     <!--Lottie -->
+    <Preference 
+        android:key="network_and_internet_animation"
+        android:order="-50"
+        android:layout="@layout/network_and_internet_animation" />
+    
     <Preference
         android:layout="@layout/kangos_header"
         android:title="@string/top_network_title"
         android:order="-45"
         settings:allowDividerBelow="false"
         android:selectable="false"/>
-
+            
     <PreferenceCategory
         android:key="multi_network_header"
         android:title="@string/summary_placeholder"
@@ -34,12 +40,7 @@
         settings:allowDividerBelow="false"
         android:order="-40"
         settings:controller="com.android.settings.network.MultiNetworkHeaderController"/>
-
-    <Preference
-        android:key="wifi_anim"
-        android:layout="@layout/wifi_animation"
-        android:order="-999"/>
-
+    
     <com.android.settings.widget.MasterSwitchPreference
         android:fragment="com.android.settings.wifi.WifiSettings"
         android:key="main_toggle_wifi"

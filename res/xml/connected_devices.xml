@@ -20,11 +20,16 @@
     android:key="connected_devices_screen"
     android:title="@string/connected_devices_dashboard_title">
 
+     <!--Lottie -->
+    <Preference 
+        android:key="connected_devices_animation"
+        android:layout="@layout/connected_devices_animation" />
+    
     <Preference
         android:layout="@layout/kangos_header"
         android:title="@string/top_connected_title"
         android:selectable="false"/>
-
+    
     <com.android.settings.slices.SlicePreference
         android:key="bt_nearby_slice"
         android:title="@string/summary_placeholder"

@@ -21,6 +21,12 @@
     android:title="@string/display_settings"
     settings:keywords="@string/keywords_display">
 
+     <!--Lottie -->
+    <Preference 
+        android:key="display_animation"
+        android:order="-500"
+        android:layout="@layout/display_animation" />
+    
     <Preference
         android:layout="@layout/kangos_header"
         android:title="@string/top_display_title"

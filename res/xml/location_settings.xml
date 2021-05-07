@@ -21,8 +21,10 @@
     android:title="@string/location_settings_title"
     settings:keywords="@string/keywords_location">
 
-    <Preference
+    <!--Lottie -->
+    <Preference 
         android:key="location_animation"
+        android:order="-998"
         android:layout="@layout/location_animation" />
     
     <Preference

@@ -21,6 +21,11 @@
     android:persistent="false"
     android:title="@string/accessibility_settings">
 
+    <!--Lottie -->
+    <Preference
+            android:key="accesibility_animation"
+            android:layout="@layout/accessibility_animation" />
+    
     <Preference
         android:layout="@layout/kangos_header"
         settings:allowDividerBelow="false"

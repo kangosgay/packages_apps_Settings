@@ -86,6 +86,7 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
 
     private StorageManager mStorageManager;
 
+    private Preference mLottie;
     private Preference mHeader;
     private PreferenceCategory mInternalCategory;
     private PreferenceCategory mExternalCategory;
@@ -120,6 +121,7 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
 
         addPreferencesFromResource(R.xml.device_info_storage);
 
+        mLottie = (Preference) findPreference("storage_animation");
         mHeader = (Preference) findPreference("storage_header");
         mInternalCategory = (PreferenceCategory) findPreference("storage_internal");
         mExternalCategory = (PreferenceCategory) findPreference("storage_external");
@@ -224,6 +226,7 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
         mInternalSummary.setSummary(getString(R.string.storage_volume_used_total,
                 Formatter.formatFileSize(context, privateTotalBytes)));
         if (mInternalCategory.getPreferenceCount() > 0) {
+            getPreferenceScreen().addPreference(mLottie);
             getPreferenceScreen().addPreference(mHeader);
             getPreferenceScreen().addPreference(mInternalCategory);
         }

@@ -22,10 +22,11 @@
     android:title="@string/app_and_notification_dashboard_title">
     <!-- the initial count should include the dynamic tiles -->
 
+    <!--Lottie -->
    <Preference
-        android:key="notification_animation"
-        android:layout="@layout/notification_animation" 
-        android:order="-999"/>
+        android:key="app_and_notification_animation"
+        android:layout="@layout/app_and_notification_animation" 
+        android:order="-1001"/>
 
     <Preference
         android:layout="@layout/kangos_header"

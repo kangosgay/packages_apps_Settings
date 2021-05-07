@@ -20,9 +20,9 @@
     android:key="system_dashboard_screen"
     android:title="@string/header_category_system">
 
-    <!--Header -->
+    <!--Lottie -->
     <Preference 
-        android:key="cherish_logo"
+        android:key="system_animation"
         android:order="-500"
         android:layout="@layout/system_animation" />
 

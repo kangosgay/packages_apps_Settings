@@ -444,4 +444,41 @@
     <dimen name="card_view_end_margin">15dp</dimen>
     <dimen name="card_height_settings">75dp</dimen>
 
+    <!-- OnePlus Control Margin Space-->
+    <dimen name="op_control_margin_space1">4.0dip</dimen>
+    <dimen name="op_control_margin_space2">8.0dip</dimen>
+    <dimen name="op_control_margin_space3">16.0dip</dimen>
+    <dimen name="op_control_margin_space4">20.0dip</dimen>
+    <dimen name="op_control_margin_space5">24.0dip</dimen>
+    <dimen name="op_control_margin_space6">32.0dip</dimen>
+    <dimen name="op_control_margin_space7">40.0dip</dimen>
+
+    <!-- OnePlus Control Margin List -->
+    <dimen name="op_control_margin_list_bottom1">10.0dip</dimen>
+    <dimen name="op_control_margin_list_bottom2">13.0dip</dimen>
+    <dimen name="op_control_margin_list_bottom3">15.0dip</dimen>
+    <dimen name="op_control_margin_list_bottom4">21.0dip</dimen>
+    <dimen name="op_control_margin_list_top1">9.0dip</dimen>
+    <dimen name="op_control_margin_list_top2">12.0dip</dimen>
+    <dimen name="op_control_margin_list_top3">15.0dip</dimen>
+    <dimen name="op_control_margin_list_top4">21.0dip</dimen>
+
+    <!-- OnePlus Control Margin Screen-->
+    <dimen name="op_control_margin_screen_bottom1">8.0dip</dimen>
+    <dimen name="op_control_margin_screen_bottom2">16.0dip</dimen>
+    <dimen name="op_control_margin_screen_bottom3">20.0dip</dimen>
+    <dimen name="op_control_margin_screen_left1">8.0dip</dimen>
+    <dimen name="op_control_margin_screen_left2">16.0dip</dimen>
+    <dimen name="op_control_margin_screen_left3">20.0dip</dimen>
+    <dimen name="op_control_margin_screen_right1">8.0dip</dimen>
+    <dimen name="op_control_margin_screen_right2">16.0dip</dimen>
+    <dimen name="op_control_margin_screen_right3">20.0dip</dimen>
+
+    <!-- OnePlus fonts -->
+    <dimen name="op_line_space_multiplier_h2">0.8</dimen>
+
+    <!-- Storage donut -->
+    <dimen name="oneplus_settings_storage_summary_donut_margin_top">22dp</dimen>
+    <dimen name="oneplus_settings_storage_summary_donut_padding_bottom">26dp</dimen>
+
 </resources>

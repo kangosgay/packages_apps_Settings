@@ -67,6 +67,7 @@ android_library {
         "VendorSupportLib",
         "airbnb-lottie",
         "faceunlock_framework",
+        "androidx.dynamicanimation_dynamicanimation",
     ],
 
     libs: [

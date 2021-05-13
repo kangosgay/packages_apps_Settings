@@ -174,7 +174,7 @@
     <color name="disabled_text_color">#66000000</color>
 
     <color name="colorAccentSettings">@*android:color/accent_device_default_light</color>
-    <color name="card_view_bg">#CCa9a9a9</color>
+    <color name="card_view_bg">#A4D8D8D8</color>
     <color name="black">#171717</color>
     <color name="off_black">#90171717</color>
 

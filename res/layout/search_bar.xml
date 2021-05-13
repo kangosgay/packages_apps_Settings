@@ -40,6 +40,7 @@
             android:layout_width="fill_parent"
             android:layout_height="@dimen/search_bar_height"
             android:layout_marginStart="-2.0dip"
+            android:paddingStart="12dp"
             android:background="@drawable/search_bar_selected_background"
             android:contentInsetStartWithNavigation="@dimen/search_bar_content_inset"
             android:navigationIcon="@drawable/ic_homepage_search">
@@ -51,17 +52,15 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:text="@string/search_menu" />
-
-
         </Toolbar>
     </com.google.android.material.card.MaterialCardView>
 
     <ImageView
         android:id="@+id/account_avatar"
-        android:layout_marginRight="28dp"
-	android:layout_marginTop="0dp"
+        android:layout_marginRight="@dimen/search_bar_margin"
+        android:layout_marginTop="0dp"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="center_vertical|end"
         android:contentDescription="@string/search_bar_account_avatar_content_description" />
 </LinearLayout>

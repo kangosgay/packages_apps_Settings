@@ -51,6 +51,7 @@ import com.android.internal.util.UserIcons;
 import com.android.settings.DisplaySettings;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
+import android.widget.EditText;
 
 import android.provider.Settings;
 import com.android.settings.R;
@@ -84,14 +85,15 @@ public class SettingsHomepageActivity extends FragmentActivity {
 
         mUserManager = context.getSystemService(UserManager.class);
 
-        getRandomName();
+//        getRandomName();
         goodVibesPlease();
 
         final Toolbar toolbar = findViewById(R.id.search_action_bar);
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
-        getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
+      final TextView homepageUsernameTextView = root.findViewById(R.id.userNameTextView); 
+      getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
         avatarView = root.findViewById(R.id.account_avatar);
         //final AvatarViewMixin avatarViewMixin = new AvatarViewMixin(this, avatarView);
@@ -104,6 +106,8 @@ public class SettingsHomepageActivity extends FragmentActivity {
                 startActivity(intent);
             }
         });
+	String name = mUserManager.getUserName();
+	homepageUsernameTextView.setText(name!=null?name:"User");
         //getLifecycle().addObserver(avatarViewMixin);
 
         if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
@@ -128,14 +132,14 @@ public class SettingsHomepageActivity extends FragmentActivity {
         fragmentTransaction.commit();
     }
 
-    private void getRandomName(){
-    Resources res = getResources();
-    String[] array = res.getStringArray(R.array.random_user_names);
-    String randomName = array[new Random().nextInt(array.length)];
-    TextView homepageUsernameTextView=(TextView) findViewById(R.id.userNameTextView);
-    homepageUsernameTextView.setText(randomName);
+//    private void getRandomName(){
+//    Resources res = getResources();
+//    String[] array = res.getStringArray(R.array.random_user_names);
+//    String randomName = array[new Random().nextInt(array.length)];
+//    final EditText homepageUsernameTextView = root.findViewById(R.id.userNameTextView);
+//    homepageUsernameTextView.setText(homepageUsernameTextView);
 
-    }
+//    }
 
     private void goodVibesPlease(){
 

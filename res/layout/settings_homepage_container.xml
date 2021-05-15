@@ -38,6 +38,9 @@
             <LinearLayout
                 android:id="@+id/homepage_container"
                 android:layout_width="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="@color/homepage_container_bg"
@@ -70,6 +73,8 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             android:paddingTop="10dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
                             android:layout_marginTop="60dp"
                             android:layout_marginLeft="0dp"
                             android:textColor="@color/settings_header_color"/>
@@ -84,6 +89,7 @@
                             app:layout_constraintTop_toTopOf="parent"
                             android:layout_marginTop="106dp"
                             android:layout_marginLeft="2dp"
+                            android:focusableInTouchMode="true"
                             android:textColor="@color/settings_header_color"/>
 
                         <TextView

@@ -22,12 +22,16 @@ import static com.android.settingslib.search.SearchIndexable.MOBILE;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.drawable.AdaptiveIconDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
-import android.os.Bundle;
+import android.graphics.drawable.ShapeDrawable;import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
 
+import androidx.core.graphics.ColorUtils;
 import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
@@ -42,6 +46,7 @@ import com.android.settings.support.SupportPreferenceController;
 import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.AdaptiveIcon;
+import com.android.settingslib.widget.AdaptiveIconShapeDrawable;
 
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements
@@ -52,6 +57,10 @@ public class TopLevelSettings extends DashboardFragment implements
     private int mIconStyle;
     private int mNormalColor;
     private int mAccentColor;
+    private int mPrimaryColor;
+
+    private Drawable fg;
+    private Drawable bg;
 
     public TopLevelSettings() {
         final Bundle args = new Bundle();
@@ -127,7 +136,6 @@ public class TopLevelSettings extends DashboardFragment implements
                     return false;
                 }
             };
-
     @Override
     public void onResume() {
         super.onResume();
@@ -138,10 +146,12 @@ public class TopLevelSettings extends DashboardFragment implements
         int[] attrs = new int[] {
             android.R.attr.colorControlNormal,
             android.R.attr.colorAccent,
+            android.R.attr.colorPrimary,
         };
         TypedArray ta = getContext().getTheme().obtainStyledAttributes(attrs);
         mNormalColor = ta.getColor(0, 0xff808080);
         mAccentColor = ta.getColor(1, 0xff808080);
+        mPrimaryColor = ta.getColor(2, 0xff808080);
         ta.recycle();
 
         mIconStyle = Settings.System.getInt(getContext().getContentResolver(),
@@ -163,38 +173,53 @@ public class TopLevelSettings extends DashboardFragment implements
 
     private void themePreference(Preference pref) {
         Drawable icon = pref.getIcon();
+        int bgc = 0;
         if (icon != null) {
             if (icon instanceof AdaptiveIcon) {
                 AdaptiveIcon aIcon = (AdaptiveIcon) icon;
-                // Clear colors from previous calls
-                aIcon.resetColorsAicp();
-                switch (mIconStyle) {
-                    case 1:
-                        aIcon.setBackgroundColorAicp(mAccentColor);
-                        break;
-                    case 2:
-                        aIcon.setForegroundColorAicp(mNormalColor);
-                        aIcon.setBackgroundColorAicp(0);
-                        break;
-                    case 3:
-                        aIcon.setForegroundColorAicp(mAccentColor);
-                        aIcon.setBackgroundColorAicp(0);
-                        break;
-                    case 4:
-                        aIcon.setForegroundColorAicp(mAccentColor);
-                        aIcon.setBackgroundColorAicp(R.color.settings_icon_oneplus);
-                        break;
-                }
+                bgc = aIcon.getBackgroundColor();
+       // Clear colors from previous calls
+        aIcon.resetColors();
+        switch (mIconStyle) {
+            case 0:
+                aIcon.setForegroundColor(mPrimaryColor);
+                break;
+            case 1:
+                aIcon.setForegroundColor(mPrimaryColor);
+                aIcon.setCustomBackgroundColor(mAccentColor);
+                break;
+            case 2:
+                aIcon.setForegroundColor(mNormalColor);
+                aIcon.setCustomBackgroundColor(0);
+                break;
+            case 3:
+                aIcon.setForegroundColor(mAccentColor);
+                aIcon.setCustomBackgroundColor(0);
+                break;
+            case 4:
+                aIcon.setForegroundColor(mAccentColor);
+                aIcon.setCustomBackgroundColor(ColorUtils.setAlphaComponent(mAccentColor, 51));
+                break;
+            case 5:
+                aIcon.setForegroundColor(bgc);
+                aIcon.setCustomBackgroundColor(ColorUtils.setAlphaComponent(bgc, 51));
+                break;
+        }
             } else if (icon instanceof LayerDrawable) {
                 LayerDrawable lIcon = (LayerDrawable) icon;
                 if (lIcon.getNumberOfLayers() == 2) {
-                    Drawable fg = lIcon.getDrawable(1);
-                    Drawable bg = lIcon.getDrawable(0);
+                    fg = lIcon.getDrawable(1);
+                    bg = lIcon.getDrawable(0);
+                    bgc = ((ShapeDrawable) bg).getPaint().getColor();
                     // Clear tints from previous calls
                     bg.setTintList(null);
                     fg.setTintList(null);
                     switch (mIconStyle) {
+                        case 0:
+                            fg.setTint(mPrimaryColor);
+                            break;
                         case 1:
+                            fg.setTint(mPrimaryColor);
                             bg.setTint(mAccentColor);
                             break;
                         case 2:
@@ -207,7 +232,11 @@ public class TopLevelSettings extends DashboardFragment implements
                             break;
                         case 4:
                             fg.setTint(mAccentColor);
-                            bg.setTint(R.color.settings_icon_oneplus);
+                            bg.setTint(ColorUtils.setAlphaComponent(mAccentColor, 51));
+                            break;
+                        case 5:
+                            fg.setTint(bgc);
+                            bg.setTint(ColorUtils.setAlphaComponent(bgc, 51));
                             break;
                     }
                 }

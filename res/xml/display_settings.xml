@@ -41,6 +41,7 @@
 
     <com.dirtyunicorns.support.preferences.SystemSettingListPreference
         android:key="greeting_mode_animations"
+        android:title="@string/greeting_mode_animations_title"
         android:entries="@array/theming_settings_dashboard_anim_entries"
         android:entryValues="@array/theming_settings_dashboard_anim_values"
         android:defaultValue="1" />

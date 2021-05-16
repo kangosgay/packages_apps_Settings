@@ -21,6 +21,12 @@
         <com.android.settingslib.widget.AdaptiveIconShapeDrawable
             android:width="@dimen/dashboard_tile_image_size"
             android:height="@dimen/dashboard_tile_image_size"
+            android:color="#FFFFFF" />
+    </item>
+    <item>
+        <com.android.settingslib.widget.AdaptiveIconShapeDrawable
+            android:width="@dimen/dashboard_tile_image_size"
+            android:height="@dimen/dashboard_tile_image_size"
             android:color="@color/homepage_du_themes_background" />
     </item>
 

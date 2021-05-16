@@ -44,12 +44,13 @@
 
     	<!-- Settings dashboard icon style -->
     <string-array name="theming_settings_dashboard_icons_entries" translatable="false">
-        <item>@string/theming_settings_dashboard_icons_default</item>
-        <item>@string/theming_settings_dashboard_icons_default_accent</item>
+        <item>@string/theming_settings_dashboard_icons_tinted</item>
+        <item>@string/theming_settings_dashboard_icons_accent_bg</item>
         <item>@string/theming_settings_dashboard_icons_plain</item>
+        <item>@string/theming_settings_dashboard_icons_plain_colored</item>
         <item>@string/theming_settings_dashboard_icons_plain_accent</item>
-        <item>@string/theming_settings_dashboard_icons_tinted_accent_bg</item>
-        <item>@string/theming_settings_dashboard_icons_tinted_bg</item>
+        <item>@string/theming_settings_dashboard_icons_oneplus</item>
+        <item>@string/theming_settings_dashboard_icons_old_style</item>
     </string-array>
 
     <string-array name="theming_settings_dashboard_icons_values" translatable="false">
@@ -59,6 +60,7 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
+        <item>6</item>
     </string-array>
     <!-- Per-app notification settings: Timeout period in which the app notifications are muted. These are shown in a list dialog. -->
     <string-array name="app_notification_sound_timeout_entries" translatable="false">

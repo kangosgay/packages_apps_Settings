@@ -61,6 +61,7 @@ public class TopLevelSettings extends DashboardFragment implements
 
     private Drawable fg;
     private Drawable bg;
+    private Drawable bg2;
 
     public TopLevelSettings() {
         final Bundle args = new Bundle();
@@ -182,7 +183,8 @@ public class TopLevelSettings extends DashboardFragment implements
         aIcon.resetColors();
         switch (mIconStyle) {
             case 0:
-                aIcon.setForegroundColor(mPrimaryColor);
+                aIcon.setForegroundColor(bgc);
+                aIcon.setCustomBackgroundColor(ColorUtils.setAlphaComponent(bgc, 150));
                 break;
             case 1:
                 aIcon.setForegroundColor(mPrimaryColor);
@@ -193,30 +195,38 @@ public class TopLevelSettings extends DashboardFragment implements
                 aIcon.setCustomBackgroundColor(0);
                 break;
             case 3:
-                aIcon.setForegroundColor(mAccentColor);
+                aIcon.setForegroundColor(bgc);
                 aIcon.setCustomBackgroundColor(0);
                 break;
             case 4:
                 aIcon.setForegroundColor(mAccentColor);
-                aIcon.setCustomBackgroundColor(ColorUtils.setAlphaComponent(mAccentColor, 51));
+                aIcon.setCustomBackgroundColor(0);
                 break;
             case 5:
-                aIcon.setForegroundColor(bgc);
-                aIcon.setCustomBackgroundColor(ColorUtils.setAlphaComponent(bgc, 51));
+                aIcon.setForegroundColor(mAccentColor);
+                aIcon.setCustomBackgroundColor(ColorUtils.setAlphaComponent(mAccentColor, 92));
+                break;
+            case 6:
+                aIcon.setForegroundColor(mPrimaryColor);
                 break;
         }
             } else if (icon instanceof LayerDrawable) {
                 LayerDrawable lIcon = (LayerDrawable) icon;
-                if (lIcon.getNumberOfLayers() == 2) {
-                    fg = lIcon.getDrawable(1);
-                    bg = lIcon.getDrawable(0);
+                if (lIcon.getNumberOfLayers() == 3) {
+                    fg = lIcon.getDrawable(2);
+                    bg = lIcon.getDrawable(1);
+                    bg2 = lIcon.getDrawable(0);
                     bgc = ((ShapeDrawable) bg).getPaint().getColor();
-                    // Clear tints from previous calls
+                    // Clear tints from previous calls & Change some defualt values
                     bg.setTintList(null);
                     fg.setTintList(null);
+                    bg2.setAlpha(0);
+                    bg2.setTint(mPrimaryColor);
                     switch (mIconStyle) {
                         case 0:
-                            fg.setTint(mPrimaryColor);
+                            fg.setTint(bgc);
+                            bg.setTint(ColorUtils.setAlphaComponent(bgc, 85));
+                            bg2.setAlpha(255);
                             break;
                         case 1:
                             fg.setTint(mPrimaryColor);
@@ -227,16 +237,20 @@ public class TopLevelSettings extends DashboardFragment implements
                             bg.setTint(0);
                             break;
                         case 3:
-                            fg.setTint(mAccentColor);
+                            fg.setTint(bgc);
                             bg.setTint(0);
                             break;
                         case 4:
                             fg.setTint(mAccentColor);
-                            bg.setTint(ColorUtils.setAlphaComponent(mAccentColor, 51));
+                            bg.setTint(0);
                             break;
                         case 5:
-                            fg.setTint(bgc);
-                            bg.setTint(ColorUtils.setAlphaComponent(bgc, 51));
+                            fg.setTint(mAccentColor);
+                            bg.setTint(ColorUtils.setAlphaComponent(mAccentColor, 85));
+                            bg2.setAlpha(255);
+                            break;
+                        case 6:
+                            fg.setTint(mPrimaryColor);
                             break;
                     }
                 }

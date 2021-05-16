@@ -177,13 +177,14 @@
     <!-- Battery temp -->
     <string name="battery_temp_title">Battery temperature</string>
     <!-- Settings dashboard icon style -->
-    <string name="theming_settings_dashboard_icons_title">Settings dashboard icons</string>
-    <string name="theming_settings_dashboard_icons_default">Default background</string>
-    <string name="theming_settings_dashboard_icons_default_accent">Accent background</string>
+    <string name="theming_settings_dashboard_icons_title">Settings Dashboard Icons</string>
+    <string name="theming_settings_dashboard_icons_tinted">Tinted Icons</string>
+    <string name="theming_settings_dashboard_icons_accent_bg">Accent background</string>
     <string name="theming_settings_dashboard_icons_plain">Plain</string>
-    <string name="theming_settings_dashboard_icons_plain_accent">Plain accent</string>
-    <string name="theming_settings_dashboard_icons_tinted_accent_bg">Tinted accent background</string>
-    <string name="theming_settings_dashboard_icons_tinted_bg">Tinted background</string>
+    <string name="theming_settings_dashboard_icons_plain_colored">Plain Colored</string>
+    <string name="theming_settings_dashboard_icons_plain_accent">Plain Accent</string>
+    <string name="theming_settings_dashboard_icons_oneplus">OnePlus</string>
+    <string name="theming_settings_dashboard_icons_old_style">Old Style</string>
 
     <!-- Back gesture height -->
     <string name="back_height_low_label">Full</string>

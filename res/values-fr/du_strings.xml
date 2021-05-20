@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Themes -->
+    <string name="du_themes_title">Thèmes</string>
+    <string name="du_themes_summary">La vie est comme une boite de crayon..</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Réinitialiser les stats</string>
+    <string name="battery_stats_message">Les statistiques de l\'historique de la batterie vont être réinitialisées</string>
+    
+    <!-- Battery health -->
+    <string name="battery_health_title">Santé de la batterie</string>
+    <string name="battery_health_summary">Surveillez la santé de la batterie de votre appareil</string>
+    <string name="current_battery_capacity">Capacité actuelle de la batterie</string>
+    <string name="current_battery_capacity_summary">Capacité actuelle de la batterie, mesurée par le kernel</string>
+    <string name="designed_battery_capacity">Capacité originale de la batterie</string>
+    <string name="designed_battery_capacity_summary">Capacité originale de la batterie</string>
+    <string name="battery_charge_cycles">Cycles de charges</string>
+
+    <!-- Custom light color -->
+    <string name="custom_light_title">Couleur de la lumière</string>
+    <string name="custom_light_on_time_title">Temps d\'allumage de la lumière pendant l\'impulsion LED(ms)</string>
+    <string name="custom_light_off_time_title">Temps d\'arrêt de la lumière pendant l\'impulsion de la LED (ms)"</string>
+    <string name="value_equals_default">def</string>
+
+    <!-- Scramble pin -->
+    <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
+    <string name="unlock_scramble_pin_layout_summary">Disposer aléatoirement le pad numérique, lors du déverrouillage de l\'appareil</string>
+
+    <!-- Search keywords for notification history -->
+    <string name="keywords_notification_log">notifications, journal de notification</string>
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tapez pour voir</string>
+
+</resources>

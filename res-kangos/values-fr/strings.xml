@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (C) 2020 KangOS
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="default_text">Défaut</string>
+
+    <!-- Silky UI Strings -->
+    <string name="top_about_title">À propos du téléphone</string>
+    <string name="top_accounts_title">Comptes</string>
+    <string name="top_apps_title">Apps et notifications</string>
+    <string name="top_lab_title">Kangies Lab</string>
+    <string name="top_battery_title">Batterie</string>
+    <string name="top_connected_title">Appareils connectés</string>
+    <string name="top_themes_title">Thèmes</string>
+    <string name="top_display_title">Écran</string>
+    <string name="top_privacy_title">Confidentialité</string>
+    <string name="top_security_title">Centre de sécurité</string>
+    <string name="top_sound_title">Sons et vibrations</string>
+    <string name="top_storage_title">Stockage</string>
+    <string name="top_system_title">Système</string>
+    <string name="top_accessibility_title">Accessibilité</string>
+    <string name="top_network_title">Résean et internet</string>
+    <string name="top_location_title">Localisation</string>
+
+    <!-- KangOS version page strings -->
+    <string name="kangos_version_branding">KangOS</string>
+    <string name="kangos_version_device">Appareil</string>
+    <string name="kangos_version_cpu">CPU</string>
+    <string name="kangos_version_resolution">Resolution</string>
+    <string name="kangos_version_battery">Batterie</string>
+    <string name="kangos_version_ram">RAM</string>
+    <string name="kangos_version_maintainer">Mainteneur</string>
+
+    <string name="kangos_maintainer">Mainteneur non officiel</string>
+
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Éviter le réveil accidentel</string>
+    <string name="proximity_wake_summary">Vérifier le capteur de proximité avant de réveiller l\'écran</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Glisser pour une capture d\'écran</string>
+    <string name="three_finger_gesture_summary">Faites glisser trois doigts vers le bas pour prendre une capture d\'écran</string>
+
+    <!-- Kangies Settings -->
+    <string name="awaken_settings_title">Kangie\'s Lab</string>
+    <string name="awaken_dashboard_summary">Toutes nos personnalisations sont ici</string>
+    <string name="visualizer_title">Visualiseur d\'écran de verrouillage</string>
+    <string name="weather_title">Météo</string>
+    <string name="traffic_title">Traffic réseau</string>
+    <string name="fodiconpickerfragment_title">Sélécteur d\'icône d\'empreinte</string>
+    <string name="fodanimpickerfragment_title">Selecteur d\'animation d\'empreinte</string>
+
+    <!-- SELinux Status -->
+    <string name="selinux_status">Statut SELinux</string>
+    <string name="selinux_status_disabled">Désactivé</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- Navbar length -->
+    <string name="navbar_length">Longueur de la barre de gestes</string>
+    <string name="hidden_label">Cachée</string>
+    <string name="long_label">Longue</string>
+
+    <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Retour haptique</string>
+    <string name="back_gesture_haptic_summary">Activer le retour haptique sur le geste Retour</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_summary">Sélectionnez les angles de rotation</string>
+    <string name="display_rotation_disabled">Désactivé</string>
+    <string name="display_rotation_unit">degrés</string>
+    <string name="display_rotation_category_title">Modes de rotation</string>
+    <string name="display_rotation_0_title">0 degré</string>
+    <string name="display_rotation_90_title">90 degrés</string>
+    <string name="display_rotation_180_title">180 degrés</string>
+    <string name="display_rotation_270_title">270 degrés</string>
+
+    <!-- Vibration patterns -->
+    <string name="vibration_pattern_title">Mode de vibration pour la sonnerie</string>
+    <string name="pattern_dzzz_dzzz">dzzz-dzzz</string>
+    <string name="pattern_dzzz_da">dzzz-da</string>
+    <string name="pattern_mm_mm_mm">mm-mm-mm</string>
+    <string name="pattern_da_da_dzzz">da-da-dzzz</string>
+    <string name="pattern_da_dzzz_da">da-dzzz-da</string>
+    <string name="pattern_custom">Personnalisé</string>
+    <string name="custom_vibration_pattern_title">Mode personnalisé</string>
+
+    <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">Silencieux, pas media</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Activé (silencieux, pas de media)</string>
+
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Lecture adaptative</string>
+    <string name="adaptive_playback_disabled_summary">Désactivée</string>
+    <string name="adaptive_playback_timeout_title">Utiliser une temporisation</string>
+    <string name="adaptive_playback_timeout_none">Pas de temporisation</string>
+    <string name="adaptive_playback_timeout_none_summary">Activé (pas de temporistaion)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 secondes</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Activé (30 secondes)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minute</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Activé (1 minute)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minutes</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Activé (2 minutes)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minutes</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Activé (5 minutes)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minutes</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Activé (10 minutes)</string>
+    <string name="adaptive_playback_explainer">La lecture adaptative met automatiquement le média en pause, lorsque le volume est coupé et reprend automatiquement, lorsque le volume est rétabli dans le délai défini.</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Son de capture d\'écran</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Lier les volumes de sonnerie &amp; notification</string>
+
+    <!-- Lock screen pattern size -->
+    <string name="lock_pattern_size_3" translatable="false">3 \u00d7 3</string>
+    <string name="lock_pattern_size_4" translatable="false">4 \u00d7 4</string>
+    <string name="lock_pattern_size_5" translatable="false">5 \u00d7 5</string>
+    <string name="lock_pattern_size_6" translatable="false">6 \u00d7 6</string>
+    <string name="lock_settings_picker_pattern_size_message">Choissisez la taille</string>
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">Montrer les erreurs</string>
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">Montrer les points</string>
+
+    <!-- Ambient Music -->
+    <string name="pulse_on_new_tracks_title">Ticker de musique (Mode ambiant)</string>
+    <string name="pulse_on_new_tracks_summary">Afficher l\'affichage ambiant lors de la lecture d\'une nouvelle piste musicale</string>
+
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Déverrouillage rapide</string>
+    <string name="unlock_quick_unlock_control_summary">Déverrouiller automatiquement lorsque le code PIN/mot de passe correct est entré</string>
+
+   <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Localisez le capteur d\'empreintes digitales à l\'avant de votre téléphone.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localisez le capteur d\'empreintes digitales sur le côté gauche de votre téléphone.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Localisez le capteur d\'empreintes digitales sur le côté droit de votre téléphone.</string>
+
+    <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Localisez le capteur d\'empreintes digitales à l\'avant de votre appareil.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Localisez le capteur d\'empreintes digitales sur le côté gauche de votre appareil.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Localisez le capteur d\'empreintes digitales sur le côté droit de votre appareil.</string>
+
+    <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Localisez le capteur d\'empreintes digitales à l\'avant de votre tablette.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localisez le capteur d\'empreintes digitales sur le côté gauche de votre tablette.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localisez le capteur d\'empreintes digitales sur le côté droit de votre tablette.</string>
+
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Écouteurs enregistrés</string>
+
+    <!-- Swipe up for face unlock -->
+    <string name="security_settings_face_require_swipe">Balayez vers le haut pour déverrouiller</string>
+    <string name="security_settings_face_require_swipe_summary">Balayez l\'écran de verrouillage vers le haut pour utiliser le déverrouillage par reconnaissance faciale</string>
+
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Température de batterie</string>
+    <!-- Settings dashboard icon style -->
+    <string name="theming_settings_dashboard_icons_title">Icônes du tableau de bord des paramètres</string>
+    <string name="theming_settings_dashboard_icons_tinted">Icônes teintées</string>
+    <string name="theming_settings_dashboard_icons_accent_bg">Fond d\'accent</string>
+    <string name="theming_settings_dashboard_icons_plain">Simple</string>
+    <string name="theming_settings_dashboard_icons_plain_colored">Simple coloré</string>
+    <string name="theming_settings_dashboard_icons_plain_accent">Simple accent</string>
+    <string name="theming_settings_dashboard_icons_oneplus">OnePlus</string>
+    <string name="theming_settings_dashboard_icons_old_style">Ancien style</string>
+
+    <!-- Back gesture height -->
+    <string name="back_height_low_label">Complet</string>
+    <string name="back_height_high_label">Bas</string>
+    <string name="back_options_dialog_title">Options</string>
+    <string name="back_height_message">Hauteur d\'écran utilisée pour le geste Retour.</string>
+
+    <!-- Running services toggle -->
+    <string name="background_processes_settings_title">Proscessus en arrière pal</string>
+
+    <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Temps minimum entre les sons de notifications</string>
+    <string name="app_notification_sound_timeout_summary_template">Autorisez pas les sons ou les vibrations pas plus d\'une fois tous les<xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Pas restriction</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 secondes</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 secondes</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minute</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutes</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
+
+    <string name="headsupsettings_title">Paramètre Heads Up</string>
+
+    <!-- Battery light -->
+    <string name="battery_light_settings_pref_title">Voyant de charge de la batterie</string>
+   <string name="battery_light_allow_on_dnd_title">Voyant de charge dans le mode Ne pas déranger</string>
+    <string name="battery_light_low_blinking_title">Voyant clignotant sur batterie faible</string>
+    <string name="battery_light_cat">Couleur du voyant en charge</string>
+    <string name="battery_light_low_color">Batterie faible</string>
+    <string name="battery_light_medium_color">Batterie moyenne</string>
+    <string name="battery_light_full_color">Batterie presque pleine</string>
+    <string name="battery_light_reallyfull_color">Batterie pleine (100)</string>
+
+    <string name="less_boring_heads_up_title">Heads up moins dérangeants</string>
+    <string name="less_boring_heads_up_summary">Désactivez rapidement Heads up pour toutes les applications, mais gardez-les activées pour les applications de numérotation et de messagerie</string>
+
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">Animation du geste Retour</string>
+    <string name="back_gesture_arrow_summary">Montrer une flêche animée pour le geste Retour.</string>
+
+    <!-- Night Display API strings -->
+    <string name="unknown_night_light_time">Inconnu - appuyez pour mettre à jour</string>
+    <string name="night_display_location_text">\n\nLes horaire du coucher et du lever de soleil nécessitent la localisation activée, pour obtenir les heures correctes de votre emplacement.</string>
+
+    <!-- Smart charging -->
+    <string name="smart_charging_title">Charge intelligente</string>
+    <string name="smart_charging_summary">Définir le niveau de charge maximum</string>
+    <string name="smart_charging_switch_title">Utiliser la charge intelligente</string>
+    <string name="smart_charging_level_title">Arrêtez la régulation</string>
+    <string name="smart_charging_resume_level_title">Démarrez la régulation</string>
+
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Autoriser l\'accès au réseau</string>
+    <string name="data_usage_app_restrict_all_summary">Activer l\'utilisation du réseau</string>
+    <string name="data_usage_app_restrict_mobile">Données mobiles</string>
+    <string name="data_usage_app_restrict_mobile_summary">Activer l\'utilisation des données mobiles</string>
+    <string name="data_usage_app_restrict_vpn">Données VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Activer l\'utilisation des données VPN</string>
+    <string name="data_usage_app_restrict_wifi">Données Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Activer l\'utilisation des données Wi\u2011Fi</string>
+
+    <string name="fp_swipe_to_dismiss_notifications_title">Faites glisser votre empreinte vers la gauche ou la droite pour ignorer les notifications</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Pour ignorer vos notifications, faites glisser votre doigt vers la gauche ou vers la droite sur le capteur d\'empreintes digitales à l\'arrière de votre téléphone.</string>
+
+    <!-- Custom actions -->
+    <string name="action_nothing">Pas d\'action</string>
+    <string name="action_search">Assistant</string>
+    <string name="action_voice_search">Recherche vocale</string>
+    <string name="action_launch_camera">Appareil photo</string>
+    <string name="action_flashlight">Lampe torche</string>
+    <string name="action_volume_panel">Panneau de volume</string>  
+    <string name="action_screen_off">Extinction de l\'écran</string>
+    <string name="action_screenshot">Capture d\'écran</string>
+    <string name="action_app_action">Application</string>
+    <string name="active_edge_ss_app_select_title">Sélectionnez l\'application de pression courte</string>
+    <string name="active_edge_ls_app_select_title">Sélectionnez l\'application de pression longue</string>
+    <string name="active_edge_app_select_summary">Sélectionnez une application à lancer avec une pression</string>
+    <string name="action_qs_panel">Panneau réglage rapides</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="action_clear_notifications">Effacer les notifications</string>
+    <string name="action_ringer_modes">Modes de sonnerie</string>
+    <string name="kill_app">Tuer l\'application au premier plan</string>
+    <string name="skip_song">Skip song</string>
+    <string name="prev_song">Passer le chanson</string>
+    <string name="show_powermenu">Montrer le menu d\'alimentation</string>
+    <string name="partial_screenshot">Capture d\'écran partielle</string>
+    <string name="hush_mute">Notifications en mode silencieux</string>
+    <!-- Long back swipe options -->
+    <string name="navbar_gesture_tweaks_pref_title">Gestes avancés</string>
+    <string name="navbar_gesture_tweaks_pref_summary">Personnalisez les gestes et définissez des actions personnalisées</string>
+    <string name="navbar_gesture_tweaks_cat_title">Avancé</string>
+    <string name="long_back_swipe_timeout_title">Temporisation de l\'action de balayage long</string>
+    <string name="left_swipe_actions_title">Balayage long à gauche</string>
+    <string name="left_swipe_app_action_title">Sélectionnez l\'application de balayage long à gauche</string>
+    <string name="right_swipe_actions_title">Balayage long à droite</string>
+    <string name="right_swipe_app_action_title">Sélectionnez l\'application de balayage long à droite</string>
+    <string name="left_vertical_swipe_actions_title">Balayage vertical gauche</string>
+    <string name="left_vertical_swipe_app_action_title">Sélectionnez l\'application de balayage vertical gauche</string>
+    <string name="right_vertical_swipe_actions_title">Balayage vertical droit</string>
+    <string name="right_vertical_swipe_app_action_title">Sélectionnez l\'application de balayage vertical droit</string>
+    <string name="gesture_nav_tweaks_footer_info">Pour choisir une activité d\'application spécifique pour l\'action, appuyez longuement sur n\'importe quelle application dans le sélecteur d\'applications. \n\nSi le lanceur s\'affiche, faites glisser le doigt tout en bas de l\'écran pour déclencher l\'action.</string>
+    <string name="back_swipe_extended_title">Balayage étendue</string>
+    <string name="back_swipe_extended_summary">Déclenchement sur un balayage plus large (plus de la moitié de la taille d\'affichage) ou un balayage en L (suffisamment long verticalement)</string>
+
+    <string name="rounded_corners_title">Coins arrondis</string>
+    <!-- About phone cards -->
+    <string name="storage_card_title">Stockage</string>
+    <string name="storage_card_info">Occupé</string>
+    <string name="about_device_rom_title">KangOS</string>
+
+    <string name="sensor_block_settings_title">Blocage de capteur</string>
+
+    <!-- Navbar radius -->
+    <string name="navbar_radius">Rayon de la barre gestes</string>
+    <string name="small_label">petit</string>
+    <string name="big_label">iOS</string>
+
+    <!-- Face Unlock -->
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Supprimer le scan du visage existant et créer un nouveau scan</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Refaire le scan du visage</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">Verrouillage de l\'écran, empreinte digitale, reconnaissance faciale</string>
+    <string name="face_redo_confirm_btn">Refaire</string>
+    <string name="face_redo_warning_msg">Voulez-vous supprimer le scan du visage existant et en créer un nouveau?</string>
+
+    <!-- DC Dimming -->
+    <string name="dc_dimming_title">Gradation DC</string>
+    <string name="dc_dimming_info">Réduit la fatigue oculaire dans des conditions de faible éclairage, mais peut entraîner une qualité d\'image réduite et une mauvaise production des couleurs.</string>
+    <string name="dc_dimming_auto_mode_title">Programmation</string>
+    <string name="dc_dimming_mode_brightness">Allumer lorsque la luminosité est inférieure au seuil</string>
+    <string name="dc_dimming_mode_full">Dépend de l\'heure et de la luminosité</string>
+    <string name="dc_dimming_brightness_title">Seuil de luminosité</string>
+    <string name="dc_dimming_brightness_disabled">Désactivé</string>
+    <string name="dc_dimming_restore_auto_mode">Restaurer le mode automatique</string>
+    <string name="dc_dimming_brightness_info">Activez uniquement la gradation DC lorsque la luminosité moyenne est inférieure au seuil</string>
+    <string name="dc_dimming_off_auto_mode_auto">S\'allumera automatiquement</string>
+    <string name="dc_dimming_on_auto_mode_auto">S\'éteindra automatiquement</string>
+    <string name="keywords_display_dc_dimming">gradation DC, scintillement, oeil, tension</string>
+
+    <!-- App Lock -->
+    <string name="applock_title">Verrou d\'application</string>
+    <string name="applock_locked">Verrouillée</string>
+    <string name="applock_unlocked">Déverrouillée</string>
+    <string name="applock_locked_apps">Applications verrouillées</string>
+    <string name="applock_unlocked_apps">Applicationd déverrouillées</string>
+    <string name="applock_lock_after_title">Verrouiller application</string>
+    <string name="applock_lock_after_instantly">Instantanément</string>
+    <string name="applock_lock_after_15_seconds">Après 15 Secondes</string>
+    <string name="applock_lock_after_screen_off">Après l\'extinction de l\'écran</string>
+    <string name="applock_lock_after_summary">L\'application sera verrouillée après la temporisation</string>
+    <string name="applock_lock_after_instantly_summary">L\'application sera verrouillée instantanément lorsqu\'elle sera fermée</string>
+    <string name="applock_lock_after_15_seconds_summary">L\'application sera verrouillée 15 secondes après la fermeture</string>
+    <string name="applock_lock_after_screen_off_summary">L\'application sera verrouillée lorsque l\'écran sera éteint</string>
+    <string name="applock_notification_info">Vous pouvez afficher/masquer le contenu de la notification par application en cliquant sur l\'icône de notification affichée sur la préférence de chaque application verrouillée.</string>
+    <string name="applock_show_notif">Affichage du contenu de la notification</string>
+    <string name="applock_hide_notif">Masquer le contenu des notifications</string>
+    <string name="applock_setup">Configurer le verrou d\'application</string>
+    <string name="applock_overlay_summary">Cette fonctionnalité n\'est pas disponible car cette application est verrouillée</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 application verrouillée</item>
+        <item quantity="other">%d applicatiosn déverrouillés</item>
+    </plurals>
+    <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
+
+
+    <!-- Settings dashboard icon style -->
+    <string name="theming_settings_dashboard_anim_title">Icônes du tableau de bord des paramètres</string>
+    <string name="theming_settings_dashboard_anim_default2">Fond d\'écran de la page d\'accueil des paramètres</string>
+    <string name="theming_settings_dashboard_anim_default_accent2">Fond d\'écran nature</string>
+    <string name="theming_settings_dashboard_anim_default_accent3">Fond d\'écran liquide</string>
+    
+    <!-- Battery header -->
+    <string name="oneplus_battery_header_title">^1%</string>
+    <string name="oneplus_battery_menu_stats_total">Voir l\'utilisation détaillée</string>
+
+    <!-- Battery saver -->
+    <string name="battery_saver_is_enabled">L\'économiseur de batterie est activé</string>
+
+    <string name="greeting_mode_animations_title">Fond d\'écran des paramètres KangOS</string>
+
+</resources>

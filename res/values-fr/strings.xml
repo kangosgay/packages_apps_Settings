@@ -4965,4 +4965,12 @@
     <string name="keywords_media_controls" msgid="8345490568291778638">"Multimédia"</string>
     <string name="connected_device_see_all_summary" msgid="2056010318537268108">"Le Bluetooth sera activé"</string>
     <string name="aware_summary_when_bedtime_on" msgid="2063856008597376344">"Indisponible, car le mode Heure du coucher est activé"</string>
+
+    <!-- Strings For Settigns-->
+    <string name="greeting_gm">Bonjour</string>
+    <string name="greeting_ga">Bon après midi</string>
+    <string name="greeting_ge">Bonsoir</string>
+    <string name="greeting_gn">Bonne nuit</string>
+    <string name="greeting_wte">Bienvenue sur Terre</string>
+
 </resources>

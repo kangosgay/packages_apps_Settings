@@ -96,12 +96,6 @@ public class MyDeviceInfoFragment extends DashboardFragment
     }
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
-        getActivity().getActionBar().setTitle(" ");
-    }
-
-    @Override
     protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return buildPreferenceControllers(context, this /* fragment */, getSettingsLifecycle());
     }

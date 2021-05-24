@@ -27,13 +27,6 @@
         android:order="-998"
         android:layout="@layout/accounts_animation" />
 
-    <!-- Section Header -->
-    <Preference
-        android:layout="@layout/kangos_header"
-        settings:allowDividerBelow="false"
-        android:title="@string/top_accounts_title"
-        android:selectable="false"/>
-            
     <PreferenceCategory
         android:key="dashboard_tile_placeholder"
         android:order="30"/>

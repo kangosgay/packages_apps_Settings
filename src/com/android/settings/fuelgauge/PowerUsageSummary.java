@@ -219,8 +219,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         super.onCreate(icicle);
         setAnimationAllowed(true);
 
-        getActivity().getActionBar().setTitle(" ");
-
         initFeatureProvider();
         mBatteryLayoutPref = (LayoutPreference) findPreference(KEY_BATTERY_HEADER);
 

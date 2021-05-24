@@ -20,7 +20,6 @@ import static com.android.settings.security.EncryptionStatusPreferenceController
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 
 import com.android.settings.R;
 import com.android.settings.biometrics.face.FaceProfileStatusPreferenceController;
@@ -70,12 +69,6 @@ public class SecuritySettings extends DashboardFragment {
     @Override
     public int getHelpResource() {
         return R.string.help_url_security;
-    }
-
-    @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
-        getActivity().getActionBar().setTitle(" ");
     }
 
     @Override

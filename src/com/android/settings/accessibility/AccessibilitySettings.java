@@ -216,7 +216,6 @@ public class AccessibilitySettings extends DashboardFragment {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         initializeAllPreferences();
-        getActivity().getActionBar().setTitle(" ");
     }
 
     @Override

@@ -26,14 +26,6 @@
         android:layout="@layout/storage_animation" 
         android:order="-10"/>
     
-    <Preference
-        android:key="storage_header"
-        android:layout="@layout/kangos_header"
-        android:title="@string/top_storage_title"
-        android:selectable="false"
-        settings:allowDividerBelow="false"
-        android:order="-5"/>
-
     <PreferenceCategory
         android:key="storage_internal"
         android:title="@string/storage_internal_title" />

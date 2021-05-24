@@ -48,7 +48,6 @@ import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
 import java.util.ArrayList;
 import java.util.List;
-import android.view.Gravity;
 
 public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedChangeListener {
 
@@ -269,7 +268,6 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
     public void show() {
         if (!isShowing()) {
             setVisibility(View.VISIBLE);
-	    setGravity(Gravity.BOTTOM);
             mSwitch.setOnCheckedChangeListener(this);
         }
     }

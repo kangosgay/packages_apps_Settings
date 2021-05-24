@@ -26,17 +26,8 @@
         android:key="location_animation"
         android:order="-998"
         android:layout="@layout/location_animation" />
-    
-    <Preference
-        android:layout="@layout/kangos_header"
-        settings:allowDividerBelow="false"
-        android:title="@string/top_location_title"
-        android:selectable="false"
-        android:order="-997"/>
-    
+
     <PreferenceCategory
-        settings:allowDividerBelow="false"
-        settings:allowDividerAbove="false"
         android:key="recent_location_requests"
         android:title="@string/location_category_recent_location_requests"
         settings:controller="com.android.settings.location.RecentLocationRequestPreferenceController"/>
@@ -49,8 +40,6 @@
         settings:searchable="false"/>
 
     <PreferenceCategory
-        settings:allowDividerBelow="false"
-        settings:allowDividerAbove="false"
         android:key="location_advanced_settings"
         android:layout="@layout/preference_category_no_label">
 
@@ -82,16 +71,12 @@
             settings:useAdminDisabledSummary="true"/>
 
         <PreferenceCategory
-            settings:allowDividerBelow="false"
-            settings:allowDividerAbove="false"
             android:key="location_services"
             android:layout="@layout/preference_category_no_label"
             settings:controller="com.android.settings.location.LocationServicePreferenceController"/>
 
         <!-- This preference gets removed if there is no managed profile -->
         <PreferenceCategory
-            settings:allowDividerBelow="false"
-            settings:allowDividerAbove="false"
             android:key="location_services_managed_profile"
             android:title="@string/managed_profile_location_services"
             settings:forWork="true"
@@ -100,9 +85,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        settings:allowDividerBelow="false"
-        settings:allowDividerAbove="false"
         android:key="location_footer"
         android:layout="@layout/preference_category_no_label"
+        settings:allowDividerAbove="false"
         settings:controller="com.android.settings.location.LocationFooterPreferenceController"/>
 </PreferenceScreen>

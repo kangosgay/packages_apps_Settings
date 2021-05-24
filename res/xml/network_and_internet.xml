@@ -26,18 +26,11 @@
         android:order="-50"
         android:layout="@layout/network_and_internet_animation" />
     
-    <Preference
-        android:layout="@layout/kangos_header"
-        android:title="@string/top_network_title"
-        android:order="-45"
-        settings:allowDividerBelow="false"
-        android:selectable="false"/>
-            
     <PreferenceCategory
         android:key="multi_network_header"
         android:title="@string/summary_placeholder"
         android:layout="@layout/preference_category_no_label"
-        settings:allowDividerBelow="false"
+        settings:allowDividerBelow="true"
         android:order="-40"
         settings:controller="com.android.settings.network.MultiNetworkHeaderController"/>
     

@@ -47,7 +47,6 @@ public class SystemDashboardFragment extends DashboardFragment {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        getActivity().getActionBar().setTitle(" ");
         showRestrictionDialog();
     }
 

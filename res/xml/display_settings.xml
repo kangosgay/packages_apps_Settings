@@ -27,11 +27,6 @@
         android:order="-500"
         android:layout="@layout/display_animation" />
     
-    <Preference
-        android:layout="@layout/kangos_header"
-        android:title="@string/top_display_title"
-        android:selectable="false"/>
-
     <com.dirtyunicorns.support.preferences.SystemSettingListPreference
         android:key="theming_settings_dashboard_icons"
         android:title="@string/theming_settings_dashboard_icons_title"

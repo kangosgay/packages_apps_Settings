@@ -86,7 +86,6 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().getActionBar().setTitle(" ");
         if (savedInstanceState != null) {
             String selectedPreference = savedInstanceState.getString(SELECTED_PREFERENCE_KEY, null);
             if (!TextUtils.isEmpty(selectedPreference)) {
